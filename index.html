@@ -12,21 +12,41 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="sidenav">
-      <a href="#services">Linux</a>
-      <a href="#clients">AWS</a>
-      <a href="#contact">GIT</a>
+    <div class="sidenav tab">
+      <button
+        class="tablinks"
+        onclick="openContent(event, 'Documentation')"
+        id="defaultOpen"
+      >
+        Documentation
+        <hr />
+      </button>
+      <button class="tablinks" onclick="openContent(event, 'AWS')">AWS</button>
+      <button class="tablinks" onclick="openContent(event, 'GIT')">GIT</button>
       <button class="dropdown-btn">Digital Ocean &#9660;</button>
       <div class="dropdown-container">
-        <a href="#">Nodejs/React</a>
-        <a href="#">Static Website</a>
-        <a href="#">WordPress</a>
-        <a href="#">PHP/MySql</a>
+        <button href="#">Nodejs/React</button>
+        <button href="#">Static Website</button>
+        <button href="#">WordPress</button>
+        <button href="#">PHP/MySql</button>
       </div>
     </div>
+    <!-- <div class="main">
+      
+    </div> -->
     <div class="main">
-      <h1>Hello Developer! 👋</h1>
-      <h3>Welcome to the World. 👨🏻‍💻</h3>
+      <div id="Documentation" class="tabcontent">
+        <h1>Hello Developer! 👋</h1>
+        <h3>Welcome to the World. 👨🏻‍💻</h3>
+      </div>
+
+      <div id="AWS" class="tabcontent">
+        <h3>AWS</h3>
+      </div>
+
+      <div id="GIT" class="tabcontent">
+        <h3>GIT</h3>
+      </div>
     </div>
 
     <script src="./script.js"></script>

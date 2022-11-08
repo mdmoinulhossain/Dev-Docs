@@ -18,7 +18,7 @@
 }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a,
+.sidenav button,
 .dropdown-btn {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -34,7 +34,7 @@
 }
 
 /* On mouse-over */
-.sidenav a:hover,
+.sidenav button:hover,
 .dropdown-btn:hover {
   color: #a5956d;
 }
@@ -48,7 +48,7 @@
 
 /* Add an active class to the active dropdown button */
 .active {
-  background-color: #6b99c3;
+  background-color: red;
   color: #e4e5ea;
 }
 
@@ -58,10 +58,10 @@
   background-color: #8aaaa5;
   padding-left: 8px;
 }
-.dropdown-container a {
+.dropdown-container button {
   color: #fff;
 }
-.dropdown-container a:hover {
+.dropdown-container button:hover {
   color: #0e1b0b;
 }
 
@@ -76,7 +76,7 @@
   .sidenav {
     padding-top: 15px;
   }
-  .sidenav a {
+  .sidenav button {
     font-size: 18px;
   }
 }
