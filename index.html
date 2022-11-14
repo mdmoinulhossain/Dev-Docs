@@ -25,7 +25,9 @@
       <button class="tablinks" onclick="openContent(event, 'GIT')">GIT</button>
       <button class="dropdown-btn">Digital Ocean &#9660;</button>
       <div class="dropdown-container">
-        <button href="#">Nodejs/React</button>
+        <button class="tablinks" onclick="openContent(event, 'ReactNode')">
+          Nodejs/React
+        </button>
         <button href="#">Static Website</button>
         <button href="#">WordPress</button>
         <button href="#">PHP/MySql</button>
@@ -46,6 +48,50 @@
 
       <div id="GIT" class="tabcontent">
         <h3>GIT</h3>
+      </div>
+
+      <div id="ReactNode" class="tabcontent">
+        <h2>Deploy reactJs or NodeJs in digitalocean droplet</h2>
+        <div class="content">
+          <ul>
+            <li>
+              <p><b>Step-1:</b> Create a droplet.</p>
+              <p><b>Step-2:</b> Install nginx in droplet root.</p>
+              <p>
+                <b>Step-3:</b>
+                enabled ufw (config ufw), Enabled firewall (after allow openSSH,
+                otherwise console disabled by firewall).
+              </p>
+
+              <p>
+                <b>Step-4:</b> clone your project from github. (in '/var/www'
+                -folder)
+              </p>
+              <p>
+                <b>Step-5:</b> Install node, npm, express in your project and
+                build.
+              </p>
+              <p>
+                <b>Step-6:</b>
+                configure nginx "default"- folder.(each projects for each file
+                configure) ('/etc/nginx/sites-available' -folder)
+              </p>
+              <p><b>Step-7:</b> Install pm2 for forever server running.</p>
+            </li>
+          </ul>
+
+          <div>
+            <b>Create a droplet</b>
+            <p>
+              Firstly you need to open an account in the Digital Ocean. They
+              need a dual currency supported card(Master Card/Visa card/Credit
+              card etc.) for international Transaction.
+              <br />
+              Just following the instructions of the Digital Ocean account
+              creation, you can create your account easily.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
 
