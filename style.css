@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+code {
+  background-color: #262626;
+  color: #fff;
+  padding: 10px;
+  display: block;
+}
+
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
