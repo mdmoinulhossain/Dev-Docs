@@ -10,6 +10,7 @@
     <title>Developer Documentation</title>
     <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   </head>
   <body>
     <div class="sidenav tab">
@@ -38,8 +39,11 @@
     </div> -->
     <div class="main">
       <div id="Documentation" class="tabcontent">
+      <span>
         <h1>Hello Developer! 👋</h1>
         <h3>Welcome to the World. 👨🏻‍💻</h3>
+      </span>
+      <span class="github_icon"><a href="https://github.com/mdmoinulhossain" target="_blank"><i class="bi bi-github"></i></a></span>
       </div>
 
       <div id="AWS" class="tabcontent">
@@ -173,12 +177,12 @@
               You can see available node version on it: <code>$ nvm list-remote</code>
               Install the latest version of node: <code>$ nvm install v16 (Note: latest version in 2022)</code>
               To see your installed version, run the following command: <code>$ node -v</code>
-              This Link help you to get several methods of installing node js: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04">Node js installation</a>
+              This Link help you to get several methods of installing node js: <a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04" target="_blank">Node js installation</a>
               <br/>
               Install npm packages into your project root directory: <code>$ npm install -f</code>
               Install the following packages of express js*: <code>$ npm install --save express -f</code> <br/>
               <i>Note: Express js need to run your application in digitalocean droplet.</i> <br/>
-              # make server.js file in your local repo and Copy paste This: <a href="https://create-react-app.dev/docs/deployment/">Documentation</a>
+              # make server.js file in your local repo and Copy paste This: <a href="https://create-react-app.dev/docs/deployment/" target="_blank">Documentation</a>
               <code>
                 const express = require('express'); <br/>
                 const path = require('path'); <br/>
@@ -193,6 +197,34 @@
                 
                 app.listen(9000);</code>
             </span>
+            <br/>
+            <br/>
+            <br/>
+            <span>
+              <b>Step-6: configure nginx "default"- folder.(each projects for each file configure) ('/etc/nginx/sites-available' -folder):</b>
+              To get the default folder you need:
+              <code>$ cd /etc/nginx/sites-available</code>
+              To Configure it:
+              <code>$ sudo nano default</code>
+              Here you get the configured default file: <a href="https://github.com/mdmoinulhossain/WebHosting/blob/main/hostingProvider/DigitalOcean/nginx-default-server_block" target="_blank">Config</a>
+            </span>
+            <br/>
+            <br/>
+            <br/>
+            <span>
+              <b>Step-7: Install pm2 for forever server running.</b> <br/>
+              Your website is ready now, but you need to run you application forever. Thats why you need to install pm2 package into your root droplet repo.
+              <code>$ npm install -g pm2</code>
+              <code>$ pm2 list</code>
+              Into your project root folder run this command:
+              <code>$ pm2 start server.js --name "project name"</code>
+              * This server.js file you create before and for this you install express.js into your project.
+              <br/>
+              <a href="https://pm2.keymetrics.io/docs/usage/quick-start/">PM2 documentation</a> 
+            </span>
+            <br/>
+            <br/>
+            <span><i>I hope This documentation helps you lot. Thanks.</i></span>
           </div>
         </div>
       </div>

@@ -10,7 +10,19 @@ code {
   padding: 10px;
   display: block;
 }
-
+.github_icon {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+.github_icon a {
+  font-size: 25px;
+  color: #0e1b0b;
+}
+.github_icon:hover {
+  transition: 0.2s;
+  transform: scale(1.5) !important;
+}
 /* Fixed sidenav, full height */
 .sidenav {
   height: 100%;
